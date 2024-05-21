@@ -1,0 +1,122 @@
+[
+    {
+      "id": 1,
+      "bookName": "The Martian",
+      "author": "Andy Weir",
+      "image": "https://i.ibb.co/L9DqSSP/download-fotor-bg-remover-2024052211231.png",
+      "review": "A gripping story of survival and ingenuity on Mars.",
+      "totalPages": 369,
+      "rating": 4.5,
+      "category": "Science Fiction",
+      "tags": ["Space Exploration", "Survival"],
+      "publisher": "W. W. Norton & Company",
+      "yearOfPublishing": 2011
+    },
+    {
+      "id": 2,
+      "bookName": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "image": "https://i.ibb.co/grDcrK6/91f-Dv-MK-a-EL-AC-UF1000-1000-QL80-fotor-bg-remover-2024052211155.png",
+      "review": "A witty and timeless tale of love and societal constraints.",
+      "totalPages": 224,
+      "rating": 4.2,
+      "category": "Romance",
+      "tags": ["Classic Literature", "Social Commentary"],
+      "publisher": "Penguin Classics",
+      "yearOfPublishing": 1813
+    },
+    {
+      "id": 3,
+      "bookName": "A Confederacy of Dunces",
+      "author": "John Kennedy Toole",
+      "image": "https://i.ibb.co/DQD0WYx/2167-fotor-bg-remover-2024052211019.png",
+      "review": "A darkly comic satire of American society.",
+      "totalPages": 323,
+      "rating": 4.0,
+      "category": "Satire",
+      "tags": ["Humor", "Southern Literature"],
+      "publisher": "Louisiana State University Press",
+      "yearOfPublishing": 1980
+    },
+    {
+      "id": 4,
+      "bookName": "The Lord of the Rings",
+      "author": "J. R. R. Tolkien",
+      "image": "https://i.ibb.co/n1kNvX2/9780358653035-fotor-bg-remover-202405221712.png",
+      "review": "An epic fantasy adventure that shaped the genre.",
+      "totalPages": 1136,
+      "rating": 4.8,
+      "category": "Fantasy",
+      "tags": ["Epic", "Adventure", "Mythology"],
+      "publisher": "Allen & Unwin",
+      "yearOfPublishing": 1954
+    },
+    {
+      "id": 5,
+      "bookName": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "image": "https://i.ibb.co/2vRCh4N/to-kill-mockingbird-0-6246f05d04644ae5ba1a02409d943a13-removebg-preview.png",
+      "review": "A powerful story about racial injustice in the American South.",
+      "totalPages": 324,
+      "rating": 4.7,
+      "category": "Historical Fiction",
+      "tags": ["Coming-of-Age", "Social Justice"],
+      "publisher": "J. B. Lippincott & Co.",
+      "yearOfPublishing": 1960
+    },
+    {
+      "id": 6,
+      "bookName": "Dune",
+      "author": "Frank Herbert",
+      "image": "https://i.ibb.co/qB0vkww/9781399623001-original-fotor-bg-remover-202405221921.png",
+      "review": "A complex and influential science fiction masterpiece.",
+      "totalPages": 863,
+      "rating": 4.3,
+      "category": "Science Fiction",
+      "tags": ["Politics", "Ecology", "Religion"],
+      "publisher": "Chilton Books",
+      "yearOfPublishing": 1965
+    },
+    {
+      "id": 7,
+      "bookName": "One Hundred Years of Solitude",
+      "author": "Gabriel García Márquez",
+      "image": "https://i.ibb.co/D5kyGqG/images-removebg-preview.png",
+      "review": "A magical realist exploration of family history and isolation.",
+      "totalPages": 487,
+      "rating": 4.6,
+      "category": "Magical Realism",
+      "tags": ["Family Saga", "History", "Latin America"],
+      "publisher": "Editorial Sudamericana",
+      "yearOfPublishing": 1967
+    },
+    {
+        "id": 8,
+        "bookName": "The Catcher in the Rye",
+        "author": "J.D. Salinger",
+        "image": "https://i.ibb.co/fv95gJ9/5857-fotor-bg-remover-202405221844.png",
+        "review": "A coming-of-age novel that explores teenage angst and rebellion.",
+        "totalPages": 224,
+        "rating": 4.5,
+        "category": "Fiction",
+        "tags": ["Coming of Age", "Classic"],
+        "publisher": "Little, Brown and Company",
+        "yearOfPublishing": 1951
+    },
+    {
+        "id": 9,
+        "bookName": "Brave New World",
+        "author": "Aldous Huxley",
+        "image": "https://i.ibb.co/By9yMkY/1587452167083-removebg-preview.png",
+        "review": "A chilling vision of a future society controlled by technology and conformity.",
+        "totalPages": 288,
+        "rating": 4.4,
+        "category": "Science Fiction",
+        "tags": ["Dystopia", "Social Engineering"],
+        "publisher": "Chatto & Windus",
+        "yearOfPublishing": 1932
+      }
+    
+
+]
+  
