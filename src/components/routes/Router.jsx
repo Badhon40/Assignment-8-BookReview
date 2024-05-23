@@ -8,6 +8,7 @@ import ReadBook from './../readBook/ReadBook';
 import WishListed from "./wishListed/WishListed";
 import PagesToRead from "../../pages/pagesToRead/PagesToRead";
 import FeedBack from "../../pages/feedback/FeedBack";
+import User from "../../pages/user/User";
 
  
 
@@ -54,7 +55,8 @@ export const router = createBrowserRouter([
           element:<FeedBack></FeedBack>
         },
         {
-          
+          path:'/user',
+          element:<User></User>
         }
       ]
     },

@@ -13,7 +13,7 @@ const Nav = () => {
                 <NavLink to='/listedbook'className= {({isActive})=> isActive ? 'btn border-success text-success': "font-semibold btn" } >Listed Book</NavLink>
                 <NavLink to='/readpage' className={({isActive})=> isActive ? 'btn border-success text-success': "font-semibold btn"}>Pages to read</NavLink>
                 <NavLink to='/feedback' className={({isActive})=> isActive ? 'btn border-success text-success': "font-semibold btn"}>FeedBack</NavLink>
-                <NavLink to='/feedback' className={({isActive})=> isActive ? 'btn border-success text-success': "font-semibold btn"}>User</NavLink>
+                <NavLink to='/user' className={({isActive})=> isActive ? 'btn border-success text-success': "font-semibold btn"}>User</NavLink>
                 </ul>
                 </div>
                 <a className="text-3xl font-bold"><span className="text-5xl">B</span>ook<span className="text-success">
