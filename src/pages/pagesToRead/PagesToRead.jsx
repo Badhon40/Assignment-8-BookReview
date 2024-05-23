@@ -26,13 +26,12 @@ const PagesToRead = () => {
     }, []);
 
     const data = readList.map(book => ({
-        name: book.title,
+        name: book.bookName,
         pages: book.totalPages,
     }));
 
     return (
         <div>
-            <h1>Pages to Read</h1>
             <BarChart
                 width={600}
                 height={400}
@@ -40,7 +39,7 @@ const PagesToRead = () => {
                 margin={{ top: 20, right: 30, left: 20, bottom: 5 }}
             >
                 <CartesianGrid strokeDasharray="3 3" />
-                <XAxis dataKey="name" />
+                <XAxis dataKey="name" stroke="#8884d8" />
                 <YAxis />
                 <Tooltip />
                 <Bar dataKey="pages" fill="#8884d8" shape={CustomBarShape} />
