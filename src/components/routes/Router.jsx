@@ -3,10 +3,10 @@ import LayOut from "../layOut/LayOut";
 import Error from "../../pages/error/Error";
 import Home from "../../pages/home/Home";
 import ListedPage from './../../pages/listedPage/ListedPage';
-import ReadPage from './../../pages/readPage/ReadPage';
 import Book from "../book/Book";
 import ReadBook from './../readBook/ReadBook';
 import WishListed from "./wishListed/WishListed";
+import PagesToRead from "../../pages/pagesToRead/PagesToRead";
 
  
 
@@ -44,7 +44,8 @@ export const router = createBrowserRouter([
         },
         {
             path:'/readpage',
-            element:<ReadPage></ReadPage>
+            element:<PagesToRead></PagesToRead>,
+            loader:()=>fetch('/data.json')
         }
       ]
     },
