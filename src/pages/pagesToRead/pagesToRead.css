@@ -1,0 +1,18 @@
+/* Add this to your CSS file */
+@media (max-width: 600px) {
+    .pages-to-read-container {
+        height: 60vh;
+    }
+
+    .bar-chart {
+        margin: 0 10px;
+    }
+}
+
+/* Optional: Additional breakpoints */
+@media (min-width: 601px) and (max-width: 1600px) {
+    .pages-to-read-container {
+        height: 80vh;
+    }
+}
+

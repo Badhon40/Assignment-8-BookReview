@@ -5,7 +5,7 @@ import Books from "../../components/books/Books";
 const Home = () => {
     const cards=useLoaderData()
 
-    console.log(cards)
+    // console.log(cards)
     return (
         <div className="lg:px-20">
             <section className="dark:bg-gray-100 dark:text-gray-800 rounded-2xl px-5">

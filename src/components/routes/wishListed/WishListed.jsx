@@ -69,7 +69,7 @@ const WishListed = () => {
             <ul>
                 {
                     displayFilter.map(book=><li key={book.id} className="mt-4">
-                       <div className="card card-side border">
+                       <div className="card card-side border flex flex-col md:flex-row">
                         <figure className="w-44 ml-6"><img src={book.image} className="bg-gray-100 rounded-lg"  alt="Movie"/></figure>
                         <div className="card-body">
                             <h2 className="card-title">{book.bookName}</h2>
@@ -88,7 +88,7 @@ const WishListed = () => {
                             </ul>
                             <hr />
                             <div className="card-actions ">
-                            <div className="flex gap-3">
+                            <div className="grid grid-cols-1 gap-3 md:grid-cols-3">
                                 <h1 className="inline-flex items-center justify-center w-full px-6 py-2 text-base font-bold leading-6 text-indigo-500 bg-indigo-300 border border-transparent rounded-full md:w-auto hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-offset-2">Catagory : {book.category}</h1>
                                 <h1 className="inline-flex items-center justify-center w-full px-6 py-2 text-base font-bold leading-6 text-amber-500 bg-amber-200 border border-transparent rounded-full md:w-auto hover:bg-amber-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-600">Rating : {book.rating}</h1>
                                 <Link to={`/book/${book.id}`} className="inline-flex items-center justify-center w-full px-6 py-2 text-base font-bold leading-6 text-white bg-green-400 border border-transparent rounded-full md:w-auto hover:bg-green-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-600">View Details</Link>
