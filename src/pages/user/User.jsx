@@ -83,7 +83,7 @@ const User = () => {
                     <p><strong>Name:</strong> {profile.name}</p>
                     <p><strong>Email:</strong> {profile.email}</p>
                     <p><strong>Bio:</strong> {profile.bio}</p>
-                    <button onClick={() => setIsEditing(true)} >Edit Profile</button>
+                    <button className="btn btn-info mt-4" onClick={() => setIsEditing(true)} >Edit Profile</button>
                 </div>
             )}
         </div>
