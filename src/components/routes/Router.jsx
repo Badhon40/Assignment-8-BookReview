@@ -7,6 +7,7 @@ import Book from "../book/Book";
 import ReadBook from './../readBook/ReadBook';
 import WishListed from "./wishListed/WishListed";
 import PagesToRead from "../../pages/pagesToRead/PagesToRead";
+import FeedBack from "../../pages/feedback/FeedBack";
 
  
 
@@ -46,6 +47,14 @@ export const router = createBrowserRouter([
             path:'/readpage',
             element:<PagesToRead></PagesToRead>,
             loader:()=>fetch('/data.json')
+        },
+
+        {
+          path:'/feedback',
+          element:<FeedBack></FeedBack>
+        },
+        {
+          
         }
       ]
     },
