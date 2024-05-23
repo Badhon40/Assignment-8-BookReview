@@ -8,6 +8,30 @@ import { Link } from "react-router-dom";
 
 const WishListed = () => {
     const [showBook,setShowBook]=useState([])
+    const [displayFilter, setDisplayFilter] = useState([]);
+    const [sortBy, setSortBy] = useState("default"); // Initial sort state
+  
+    const handleSortChange = (event) => {
+      const selectedField = event.target.value;
+      setSortBy(selectedField);
+  
+      const sortedBooks = [...showBook].sort((bookA, bookB) => {
+        switch (selectedField) {
+          case "bookName":
+            return bookA.bookName.localeCompare(bookB.bookName);
+          case "yearOfPublishing":
+            return bookB.yearOfPublishing - bookA.yearOfPublishing;
+          case "rating":
+            return bookB.rating - bookA.rating;
+          case "totalPages":
+            return bookA.totalPages - bookB.totalPages;
+          default:
+            return bookA.id - bookB.id; // Default to id for unexpected cases
+        }
+      });
+  
+      setDisplayFilter(sortedBooks);
+    };
     
     const books=useLoaderData()
     useEffect(()=>{
@@ -22,6 +46,7 @@ const WishListed = () => {
                 }
             }
             setShowBook(readBooks)
+            setDisplayFilter(readBooks)
         }
         
     },[])
@@ -29,10 +54,21 @@ const WishListed = () => {
     
     console.log(books,showBook)
     return (
-        <div>
+        <div className="mt-4" >
+        <div className="flex justify-center ">
+        <div className="flex mb-4 border-2 p-2 bg-success">
+            <select value={sortBy} onChange={handleSortChange} className="bg-success text-white">
+            <option value="default">Sort By</option>
+            <option value="bookName">Book Name</option>
+            <option value="yearOfPublishing">Year Published</option>
+            <option value="rating">Rating</option>
+            <option value="totalPages">Pages</option>
+            </select>
+        </div>
+        </div>
             <ul>
                 {
-                    showBook.map(book=><li key={book.id} className="mt-4">
+                    displayFilter.map(book=><li key={book.id} className="mt-4">
                        <div className="card card-side border">
                         <figure className="w-44 ml-6"><img src={book.image} className="bg-gray-100 rounded-lg"  alt="Movie"/></figure>
                         <div className="card-body">
